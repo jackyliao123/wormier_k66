@@ -1,0 +1,54 @@
+Escape: 00   
+1: 42 -----------------   Insert 69
+Tab:  71          --------------------   Delete a8
+Capslock: bd     ----------------------- Enter e4
+Lshift: fc, Z - 102 -------------------- /: 11d    Rshift: 123    Up: 129
+Lcontrol 13b -   Fn: 14a   Rctrl 153     Left 165    ----   Right 16b
+
+
+Update LED color:
+11 [length] [key offset (2)] 00 [colors.......]
+
+Brightness
+06 01010000 [brightness 00 - 03]
+
+Speed
+06 01020000 [speed 00 - 03 (00 fastest)]
+
+Lighting mode
+06 01000000 [mode]
+01 - Go with the stream
+02 - Clouds fly
+03 - Winding paths
+04 - The trial of light
+05 - Breathing
+06 - Normally on
+07 - Pass without trace
+08 - Ripple graff
+09 - Fast run without trace
+0a - Snow winter jasmine
+0b - Flowers blooming
+0c - Swift action
+0d - Hurricane
+0e - Accumulate
+0f - Digital Times
+10 - Both ways
+11 - Surmount
+12 - Fast and the Furious
+14 - Coastal
+15 - Off
+
+Polling rate
+06 010f0000 [rate 00 - 03 125 250 500 1000]
+
+Colourful
+06 01040000 [is_colourful]
+
+Colour
+06 03050000 [rgb]
+
+Direction
+06 01030000 [1: right/down/out, -1: left/up/in]
+
+Gradient
+06 01110000 [0: red/purple, 1: yellow/orange, 2: green, 3: aqua/blue]
